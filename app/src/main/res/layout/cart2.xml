@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    </android.support.design.widget.AppBarLayout>
+
+        <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Items Selected....."
+            android:padding="3dip"
+            android:textSize="15dp"/>
+    </TableRow>
+
+    <TableRow>
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/list_divider"
+            android:paddingTop="3dip"
+            android:layout_weight="1"
+            android:paddingBottom="3dip"
+            android:clipToPadding="false"
+            android:dividerHeight="10.0sp"
+            android:listSelector="@drawable/list_row_selector" />    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Total Cost"
+            android:padding="3dip" />
+
+        <TextView
+            android:id="@+id/totalcost"
+            android:gravity="right" />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Delivery Charges"
+            android:padding="3dip" />
+
+        <TextView
+            android:text="\u20B950"
+            android:gravity="right"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow
+        android:weightSum="2">
+        <TextView
+            android:layout_column="0"
+            android:text="Container Charges"
+            android:padding="3dip"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="\u20B950"
+            android:gravity="right"/>
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <TextView
+            android:layout_column="0"
+            android:text="Grand Total"
+            android:padding="3dip" />
+
+        <TextView
+            android:id="@+id/grandtotal"
+            android:gravity="right"
+
+            />
+    </TableRow>
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+    <TableRow>
+        <Button
+            android:id="@+id/ConfirmOrder"
+            android:layout_column="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:layout_marginRight="100dp"
+            android:background="@color/btn_login_bg"
+            android:text="Confirm Order"
+            android:textColor="@color/btn_login" />
+    </TableRow>
+</TableLayout>
