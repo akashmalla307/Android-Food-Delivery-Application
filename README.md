@@ -6,3 +6,8 @@ Food–Node App: It's an android app in which you can create your account and yo
 Technology Used - Android, PHP, MySql
 
 ![alt text](https://github.com/akashmalla307/Android-Food-Cart/blob/master/1.png?raw=true)
+![alt text](https://github.com/akashmalla307/Android-Food-Cart/blob/master/2.png?raw=true)
+![alt text](https://github.com/akashmalla307/Android-Food-Cart/blob/master/3.png?raw=true)
+![alt text](https://github.com/akashmalla307/Android-Food-Cart/blob/master/4.png?raw=true)
+![alt text](https://github.com/akashmalla307/Android-Food-Cart/blob/master/5.png?raw=true)
+![alt text](https://github.com/akashmalla307/Android-Food-Cart/blob/master/6.png?raw=true)
