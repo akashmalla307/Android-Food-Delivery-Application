@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">foodnode</string>
+    <string name="app_name">HungryPanda</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -27,9 +27,9 @@
     <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
     <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="hint_email">Email:Akash</string>
+    <string name="hint_email">Email:Test</string>
     <string name="hint_password">Password:123</string>
-    <string name="hint_name">Name:akash</string>
+    <string name="hint_name">Name:Test</string>
     <string name="btn_login">LOGIN</string>
     <string name="btn_register">REGISTER</string>
     <string name="btn_link_to_register">Not a member? Sign up now.</string>
@@ -49,9 +49,11 @@
     <!-- navigation drawer item labels  -->
     <string-array name="nav_drawer_labels">
         <item>@string/nav_item_home</item>
-        <item>@string/nav_item_share</item>
+       <!-- <item>@string/nav_item_share</item>
+        -->
         <item>@string/nav_item_contactme</item>
-        <item>@string/nav_item_logout</item>
+        <!--<item>@string/nav_item_logout</item>
+    -->
     </string-array>
 
     <string name="title_logout">Profile</string>

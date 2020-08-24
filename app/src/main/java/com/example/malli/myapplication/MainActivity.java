@@ -43,13 +43,13 @@ import android.widget.Toast;
     }
 
 
-    @Override
+/*    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
-
+*/
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -83,19 +83,19 @@ import android.widget.Toast;
                 fragment = new HomeFragment();
                 title = getString(R.string.title_home);
                 break;
-            case 1:
+           /* case 1:
                 fragment = new FriendsFragment();
                 title = getString(R.string.title_share);
-                break;
-            case 2:
+                break;*/
+            case 1:
                 fragment = new MessagesFragment();
                 title = getString(R.string.title_contactme);
                 break;
 
-            case 3:
+            /*case 3:
                 fragment = new LogOutFragment();
                 title = getString(R.string.title_logout);
-                break;
+                break;*/
             default:
                 break;
         }

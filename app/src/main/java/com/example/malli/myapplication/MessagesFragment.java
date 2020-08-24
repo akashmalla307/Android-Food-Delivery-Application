@@ -26,7 +26,7 @@ public class MessagesFragment extends Fragment {
    */
         Intent intent = new Intent(Intent.ACTION_SEND);
 
-        String[] strTo = { getString("akashmalla07@gmail.com") };
+        String[] strTo = { getString("abhilash576@gmail.com") };
 
         intent.putExtra(Intent.EXTRA_EMAIL, strTo);
      //   intent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.mail_subject));

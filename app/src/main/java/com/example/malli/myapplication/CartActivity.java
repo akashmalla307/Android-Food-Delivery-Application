@@ -1,9 +1,12 @@
 package com.example.malli.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -26,6 +29,7 @@ public class CartActivity extends AppCompatActivity {
     private Toolbar toolbar;
     TextView totalcost;
     TextView grandtotal;
+    Button ConfirmOrder;
 //    private TabLayout tabLayout;
 
     private List<Movie> movieList = new ArrayList<>();
@@ -46,7 +50,7 @@ public class CartActivity extends AppCompatActivity {
         totalcost = (TextView)findViewById(R.id.totalcost);
         grandtotal = (TextView)findViewById(R.id.grandtotal);
         setSupportActionBar(toolbar);
-        //getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        //get SupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setTitle("Your Cart");
 
         listView = (ListView) findViewById(R.id.list);
@@ -95,6 +99,27 @@ public class CartActivity extends AppCompatActivity {
         // so that it renders the list view with updated data
         adapter.notifyDataSetChanged();
 
+        ConfirmOrder = (Button) findViewById(R.id.ConfirmOrder);
+        ConfirmOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),
+                        ConfirmOrderPage.class);
+                startActivity(i);
+
+            }
+        });
+        /*convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+                Intent intent=new Intent(view.getContext(), ScrollableTabsActivity.class);
+                intent.putExtra("restname", m.getTitle());
+                view.getContext().startActivity(intent);
+
+            }
+        });*/
         // Adding request to request queue
       //  AppController.getInstance().addToRequestQueue(movieReq);
 
